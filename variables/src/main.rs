@@ -19,7 +19,8 @@ fn main() {
     };
 
     // print!("{:?}", user1);
-    print!("{:?}", user2);
+    println!("{:?}", user2);
+    println!("{:?}", user2);
 
     let o1 = Option::Some(32);
     println!("{:?}", o1);
