@@ -1,0 +1,30 @@
+[package]
+name = "facemash"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[source.crates-io]
+replace-with = 'ustc'
+
+[source.ustc]
+registry = "git://mirrors.ustc.edu.cn/crates.io-index"
+
+[dependencies]
+actix-web = "4"
+actix-rt = "2.7.0"
+actix-multipart = "0.4.0"
+actix-files = "0.6.2"
+
+log = "0.4"
+chrono = "0.4"
+rust-crypto = "0.2.36"
+serde = { version = "1.0", features = ["derive"] }
+futures-util = { version = "0.3.17", default-features = false, features = ["std"] }
+uuid = { version = "1", features = ["v4"] }
+mongodb = "2"
+lazy_static = "1.4.0"
+async_once = "0.2.6"
+dotenv = "0.15.0"
+rs-snowflake = "0.6.0"
